@@ -1,0 +1,18 @@
+﻿<Window x:Class="Erronka1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Erronka1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="100" Margin="350,60,0,0" VerticalAlignment="Top" Width="100" Source="/img/user.png"/>
+        <TextBox x:Name="tbUserName" HorizontalAlignment="Center" Margin="0,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="29" FontSize="16"/>
+        <Label Content="Userra:" HorizontalAlignment="Left" Margin="254,188,0,0" VerticalAlignment="Top" Height="29" Width="61" FontSize="16"/>
+        <Label Content="Pasahitza:" HorizontalAlignment="Left" Margin="238,253,0,0" VerticalAlignment="Top" Height="29" Width="77" FontSize="16"/>
+        <PasswordBox x:Name="tbPasahitza" HorizontalAlignment="Center" Margin="0,253,0,0" VerticalAlignment="Top" Width="160" Height="29" FontSize="16"/>
+        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Center" Margin="0,313,0,0" VerticalAlignment="Top" Height="35" Width="192" FontSize="16" Click="login"/>
+
+    </Grid>
+</Window>
