@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Erronka1.Bistak.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,22 @@ namespace Erronka1.Bistak
         public AdminWindow()
         {
             InitializeComponent();
+            Zeerenda.Content = new StockView(); // Defektuzko bista
+        }
+
+        private void BtnUserrak(Object sender, RoutedEventArgs e)
+        {
+            Zeerenda.Content = new UsersView();
+        }
+        private void BtnStocka(Object sender, RoutedEventArgs e)
+        {
+            Zeerenda.Content = new StockView();
+        }
+        private void SesioaItxi(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
+            this.Close();
         }
     }
 }

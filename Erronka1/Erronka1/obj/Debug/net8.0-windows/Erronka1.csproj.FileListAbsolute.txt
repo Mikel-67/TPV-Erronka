@@ -28,3 +28,37 @@ D:\Interfaze garapena\Interfaze-garapena\Erronka1\Erronka1\obj\Debug\net8.0-wind
 D:\Interfaze garapena\Interfaze-garapena\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\ErabiltzaileWindow.g.cs
 D:\Interfaze garapena\Interfaze-garapena\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\ErabiltzaileWindow.baml
 D:\Interfaze garapena\Interfaze-garapena\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1.csproj.Up2Date
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\bin\Debug\net8.0-windows\Erronka1.exe
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\bin\Debug\net8.0-windows\Erronka1.deps.json
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\bin\Debug\net8.0-windows\Erronka1.runtimeconfig.json
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\bin\Debug\net8.0-windows\Erronka1.dll
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\bin\Debug\net8.0-windows\Erronka1.pdb
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\bin\Debug\net8.0-windows\Npgsql.dll
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1.csproj.AssemblyReference.cache
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\AdminWindow.g.cs
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\ErabiltzaileWindow.g.cs
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\App.g.cs
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1_MarkupCompile.cache
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1_MarkupCompile.lref
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\AdminWindow.baml
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\ErabiltzaileWindow.baml
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\MainWindow.baml
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1.g.resources
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1.AssemblyInfoInputs.cache
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1.AssemblyInfo.cs
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1.csproj.CoreCompileInputs.cache
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1.sourcelink.json
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1.csproj.Up2Date
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1.dll
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\refint\Erronka1.dll
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1.pdb
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Erronka1.genruntimeconfig.cache
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\ref\Erronka1.dll
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\Views\StockView.baml
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\Views\UsersView.baml
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\Views\StockView.g.cs
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\Views\UsersView.g.cs
