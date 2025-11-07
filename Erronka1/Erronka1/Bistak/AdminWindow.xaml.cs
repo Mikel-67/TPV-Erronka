@@ -20,10 +20,11 @@ namespace Erronka1.Bistak
     /// </summary>
     public partial class AdminWindow : Window
     {
-        public AdminWindow()
+        public AdminWindow(Npgsql.NpgsqlConnection konexioa)
         {
             InitializeComponent();
             Zeerenda.Content = new StockView(); // Defektuzko bista
+            ProduktuakEskuratu(konexioa);
         }
 
         private void BtnUserrak(Object sender, RoutedEventArgs e)
@@ -39,6 +40,26 @@ namespace Erronka1.Bistak
             MainWindow mainWindow = new MainWindow();
             mainWindow.Show();
             this.Close();
+        }
+        private void ProduktuakEskuratu(Npgsql.NpgsqlConnection konexioa)
+        {
+            String query = "SELECT * FROM produktuak";
+            using (var cmd = new Npgsql.NpgsqlCommand(query, konexioa))
+            {
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        // Produktuen datuak prozesatu
+                        int id = reader.GetInt32(reader.GetOrdinal("id"));
+                        string izena = reader.GetString(reader.GetOrdinal("izena"));
+                        decimal prezioa = reader.GetDecimal(reader.GetOrdinal("prezioa"));
+                        int stocka = reader.GetInt32(reader.GetOrdinal("stocka"));
+
+
+                    }
+                }
+            }
         }
     }
 }
