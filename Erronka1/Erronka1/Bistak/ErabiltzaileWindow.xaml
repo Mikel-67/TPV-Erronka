@@ -7,7 +7,71 @@
         mc:Ignorable="d"
         Title="ErabiltzaileWindow" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Margin="284,188,0,0" TextWrapping="Wrap" Text="Erabiltzaile Orrialdea" VerticalAlignment="Top" Width="225" Height="83" FontSize="24"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="4*"/>
+            <!-- Parte izquierda -->
+            <ColumnDefinition Width="4*"/>
+            <!-- Parte derecha -->
+        </Grid.ColumnDefinitions>
 
+        <!-- IZQUIERDA -->
+        <Grid Grid.Column="0" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <!-- Botones TPV/Reserva -->
+                <RowDefinition Height="*"/>
+                <!-- Lista de productos -->
+                <RowDefinition Height="Auto"/>
+                <!-- Botones acción -->
+            </Grid.RowDefinitions>
+
+            <!-- Botones TPV / Reserva -->
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
+                <Button Content="TPV" Width="100" Margin="5"/>
+                <Button Content="Reserva" Width="100" Margin="5"/>
+            </StackPanel>
+
+            <!-- Lista de productos seleccionados -->
+            <DataGrid x:Name="dgProductosSeleccionados" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,0,0,10">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Nombre" Binding="{Binding Izena}" Width="*"/>
+                    <DataGridTextColumn Header="Precio (€)" Binding="{Binding Prezioa}" Width="80"/>
+                    <DataGridTextColumn Header="Cantidad" Binding="{Binding Cantidad}" Width="80"/>
+                    <DataGridTextColumn Header="Subtotal" Binding="{Binding Subtotal}" Width="100"/>
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <!-- Botones acción -->
+            <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Right">
+                <Button Content="Borrar Seleccionado" Width="150" Margin="5"/>
+                <Button Content="Imprimir / Pagar" Width="150" Margin="5"/>
+            </StackPanel>
+        </Grid>
+
+        <!-- DERECHA -->
+        <Grid Grid.Column="1" Margin="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <!-- Botones por tipo de producto -->
+                <RowDefinition Height="*"/>
+                <!-- Productos filtrados -->
+            </Grid.RowDefinitions>
+
+            <!-- Tipos de producto -->
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
+                <Button Content="Bebidas" Width="100" Margin="5"/>
+                <Button Content="Comida" Width="100" Margin="5"/>
+                <Button Content="Postres" Width="100" Margin="5"/>
+            </StackPanel>
+
+            <!-- Productos filtrados por tipo -->
+            <WrapPanel Grid.Row="1" x:Name="wpProductos" HorizontalAlignment="Left" VerticalAlignment="Top" ItemWidth="120" ItemHeight="100">
+                <!-- Cada producto será un Button que al pulsar añade a la lista de la izquierda -->
+                <Button Content="Coca-Cola" Width="120" Height="100" Margin="5"/>
+                <Button Content="Estrella Galicia" Width="120" Height="100" Margin="5"/>
+                <Button Content="Kas Naranja" Width="120" Height="100" Margin="5"/>
+                <!-- Se pueden cargar dinámicamente desde código según el tipo -->
+            </WrapPanel>
+        </Grid>
     </Grid>
 </Window>
