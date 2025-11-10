@@ -23,7 +23,7 @@ namespace Erronka1.Bistak
     public partial class AdminWindow : Window
     {
         private ObservableCollection<Produktua> produktuList { get; set; } = new ObservableCollection<Produktua>();
-        private List<Userrak> userList = new List<Userrak>();
+        private ObservableCollection<Userrak> userList { get; set; } = new ObservableCollection<Userrak>();
         private readonly string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=1234;Database=tpvdb";
         public AdminWindow()
         {

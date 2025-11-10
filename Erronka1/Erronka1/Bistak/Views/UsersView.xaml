@@ -24,9 +24,9 @@
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Right"
                     VerticalAlignment="Bottom">
-            <Button Content="Gehitu" Width="90" Margin="5"/>
-            <Button Content="Aldatu" Width="90" Margin="5"/>
-            <Button Content="Ezabatu" Width="90" Margin="5"/>
+            <Button Content="Gehitu" Width="90" Margin="5" Click="GehituUser"/>
+            <Button Content="Aldatu" Width="90" Margin="5" Click="EditatuUser"/>
+            <Button Content="Ezabatu" Width="90" Margin="5" Click="EzabatuUser"/>
         </StackPanel>
     </Grid>
 </UserControl>

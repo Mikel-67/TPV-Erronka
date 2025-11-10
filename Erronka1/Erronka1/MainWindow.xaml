@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="100" Margin="350,60,0,0" VerticalAlignment="Top" Width="100" Source="/img/user.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="350,60,0,0" VerticalAlignment="Top" Width="100" Source="/user.png"/>
         <TextBox x:Name="tbUserName" HorizontalAlignment="Center" Margin="0,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="29" FontSize="16"/>
         <Label Content="Userra:" HorizontalAlignment="Left" Margin="254,188,0,0" VerticalAlignment="Top" Height="29" Width="61" FontSize="16"/>
         <Label Content="Pasahitza:" HorizontalAlignment="Left" Margin="238,253,0,0" VerticalAlignment="Top" Height="29" Width="77" FontSize="16"/>

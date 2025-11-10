@@ -1,0 +1,21 @@
+﻿<Window x:Class="Erronka1.Bistak.Views.UserrakDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Erronka1.Bistak.Views"
+        mc:Ignorable="d"
+        Title="ProduktuakDialog" Height="450" Width="800">
+    <StackPanel Margin="10" VerticalAlignment="Center">
+        <TextBlock Text="Izena:"/>
+        <TextBox x:Name="tbIzena" Margin="0,0,0,10"/>
+        <TextBlock Text="Pasahitza:"/>
+        <TextBox x:Name="tbPrezioa" Margin="0,0,0,10"/>
+        <TextBlock Text="Admin:"/>
+        <CheckBox x:Name="cbAdmin" Margin="0,0,0,20"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Content="Cancelar" Width="80" Margin="5" Click="BtnCancelar_Click"/>
+            <Button Content="Guardar" Width="80" Margin="5" Click="BtnGuardar_Click"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

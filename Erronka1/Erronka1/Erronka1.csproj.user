@@ -14,6 +14,9 @@
     <Compile Update="Bistak\Views\StockView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Bistak\Views\UserrakDialog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Bistak\Views\UsersView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

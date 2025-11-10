@@ -64,3 +64,5 @@ D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erro
 D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\Views\UsersView.g.cs
 D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\Views\ProduktuakDialog.g.cs
 D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\Views\ProduktuakDialog.baml
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\Views\UserrakDialog.g.cs
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\Views\UserrakDialog.baml
