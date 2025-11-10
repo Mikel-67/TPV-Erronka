@@ -54,7 +54,7 @@ namespace Erronka1
                         bool admin = reader.GetBoolean(reader.GetOrdinal("admin"));
                         if (admin)
                         {
-                            Erronka1.Bistak.AdminWindow adminWindow = new Erronka1.Bistak.AdminWindow(konexioa);
+                            Erronka1.Bistak.AdminWindow adminWindow = new Erronka1.Bistak.AdminWindow();
                             adminWindow.Show();
                             this.Close();
                         }

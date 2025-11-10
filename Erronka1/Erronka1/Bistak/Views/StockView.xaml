@@ -12,21 +12,22 @@
                    FontSize="24"
                    FontWeight="Bold"
                    Margin="0,0,0,10"/>
-        <DataGrid Margin="0,50,0,60"
+        <DataGrid x:Name="dgStock"
+                  Margin="0,50,0,60"
                   AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Width="50"/>
-                <DataGridTextColumn Header="Izena" Width="200"/>
-                <DataGridTextColumn Header="Prezioa(€)" Width="100"/>
-                <DataGridTextColumn Header="Kantitatea" Width="100"/>
+                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                <DataGridTextColumn Header="Izena" Binding="{Binding Izena}" Width="200"/>
+                <DataGridTextColumn Header="Prezioa(€)" Binding="{Binding Prezioa}" Width="100"/>
+                <DataGridTextColumn Header="Kantitatea" Binding="{Binding Stocka}" Width="100"/>
             </DataGrid.Columns>
         </DataGrid>
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Right"
                     VerticalAlignment="Bottom">
-            <Button Content="Gehitu" Width="90" Margin="5"/>
-            <Button Content="Aldatu" Width="90" Margin="5"/>
-            <Button Content="Ezabatu" Width="90" Margin="5"/>
+            <Button Content="Gehitu" Width="90" Margin="5" Click="GehituStock"/>
+            <Button Content="Aldatu" Width="90" Margin="5" Click="EditatuStock"/>
+            <Button Content="Ezabatu" Width="90" Margin="5" Click="EzabatuStock"/>
         </StackPanel>
     </Grid>
 </UserControl>

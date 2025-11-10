@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Erronka1.Modeloak;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,9 +21,10 @@ namespace Erronka1.Bistak.Views
     /// </summary>
     public partial class UsersView : System.Windows.Controls.UserControl
     {
-        public UsersView()
+        public UsersView(List<Userrak> userrak)
         {
             InitializeComponent();
+            dgUserrak.ItemsSource = userrak;
         }
     }
 }

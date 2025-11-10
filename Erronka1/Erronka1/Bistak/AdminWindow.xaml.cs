@@ -1,6 +1,8 @@
 ﻿using Erronka1.Bistak.Views;
+using Erronka1.Modeloak;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,20 +22,25 @@ namespace Erronka1.Bistak
     /// </summary>
     public partial class AdminWindow : Window
     {
-        public AdminWindow(Npgsql.NpgsqlConnection konexioa)
+        private ObservableCollection<Produktua> produktuList { get; set; } = new ObservableCollection<Produktua>();
+        private List<Userrak> userList = new List<Userrak>();
+        private readonly string connectionString = "Host=localhost;Port=5432;Username=postgres;Password=1234;Database=tpvdb";
+        public AdminWindow()
         {
             InitializeComponent();
-            Zeerenda.Content = new StockView(); // Defektuzko bista
-            ProduktuakEskuratu(konexioa);
+            ProduktuakEskuratu();
+            UserrakEskuratu();
+
+            Zeerenda.Content = new StockView(produktuList); // Defektuzko bista
         }
 
         private void BtnUserrak(Object sender, RoutedEventArgs e)
         {
-            Zeerenda.Content = new UsersView();
+            Zeerenda.Content = new UsersView(userList);
         }
         private void BtnStocka(Object sender, RoutedEventArgs e)
         {
-            Zeerenda.Content = new StockView();
+            Zeerenda.Content = new StockView(produktuList);
         }
         private void SesioaItxi(object sender, RoutedEventArgs e)
         {
@@ -41,22 +48,52 @@ namespace Erronka1.Bistak
             mainWindow.Show();
             this.Close();
         }
-        private void ProduktuakEskuratu(Npgsql.NpgsqlConnection konexioa)
+        private void ProduktuakEskuratu()
         {
-            String query = "SELECT * FROM produktuak";
-            using (var cmd = new Npgsql.NpgsqlCommand(query, konexioa))
+            using (var konexioa = new Npgsql.NpgsqlConnection(connectionString))
             {
-                using (var reader = cmd.ExecuteReader())
+                konexioa.Open();
+                String query = "SELECT * FROM produktuak";
+                using (var cmd = new Npgsql.NpgsqlCommand(query, konexioa))
                 {
-                    while (reader.Read())
+                    using (var reader = cmd.ExecuteReader())
                     {
-                        // Produktuen datuak prozesatu
-                        int id = reader.GetInt32(reader.GetOrdinal("id"));
-                        string izena = reader.GetString(reader.GetOrdinal("izena"));
-                        decimal prezioa = reader.GetDecimal(reader.GetOrdinal("prezioa"));
-                        int stocka = reader.GetInt32(reader.GetOrdinal("stocka"));
+                        while (reader.Read())
+                        {
+                            // Produktuen datuak prozesatu
+                            int id = reader.GetInt32(reader.GetOrdinal("id"));
+                            string izena = reader.GetString(reader.GetOrdinal("izena"));
+                            decimal prezioa = reader.GetDecimal(reader.GetOrdinal("prezioa"));
+                            int stocka = reader.GetInt32(reader.GetOrdinal("stock"));
 
+                            produktuList.Add(new Produktua(id, izena, prezioa, stocka));
+                        }
+                    }
+                }
+                konexioa.Close();
+            }
+        }
+        private void UserrakEskuratu()
+        {
+            using (var konn = new Npgsql.NpgsqlConnection(connectionString))
+            {
+                konn.Open();
+                String query = "SELECT * FROM userrak";
+                using (var cmd = new Npgsql.NpgsqlCommand(query, konn))
+                {
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            // Userraken datuak prozesatu
+                            int id = reader.GetInt32(reader.GetOrdinal("id"));
+                            string izena = reader.GetString(reader.GetOrdinal("izena"));
+                            string pasahitza = reader.GetString(reader.GetOrdinal("pasahitza"));
+                            bool admin = reader.GetBoolean(reader.GetOrdinal("admin"));
+                            // Hemen egin dezake
 
+                            userList.Add(new Userrak(id, izena, pasahitza, admin));
+                        }
                     }
                 }
             }
