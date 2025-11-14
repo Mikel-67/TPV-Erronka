@@ -8,6 +8,9 @@
     <Compile Update="Bistak\ErabiltzaileWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Bistak\Views\ErreserbaWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Bistak\Views\ProduktuakDialog.xaml.cs">
       <SubType>Code</SubType>
     </Compile>

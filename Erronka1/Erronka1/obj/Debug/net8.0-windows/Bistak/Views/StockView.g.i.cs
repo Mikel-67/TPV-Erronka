@@ -60,7 +60,7 @@ namespace Erronka1.Bistak.Views {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Erronka1;V1.0.0.0;component/bistak/views/stockview.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Erronka1;component/bistak/views/stockview.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Bistak\Views\StockView.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

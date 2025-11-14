@@ -9,69 +9,57 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="4*"/>
-            <!-- Parte izquierda -->
             <ColumnDefinition Width="4*"/>
-            <!-- Parte derecha -->
         </Grid.ColumnDefinitions>
 
-        <!-- IZQUIERDA -->
         <Grid Grid.Column="0" Margin="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <!-- Botones TPV/Reserva -->
                 <RowDefinition Height="*"/>
-                <!-- Lista de productos -->
                 <RowDefinition Height="Auto"/>
-                <!-- Botones acción -->
             </Grid.RowDefinitions>
 
-            <!-- Botones TPV / Reserva -->
             <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
                 <Button Content="TPV" Width="100" Margin="5"/>
-                <Button Content="Reserva" Width="100" Margin="5"/>
+                <Button Content="Erreserba" Width="100" Margin="5"/>
             </StackPanel>
 
-            <!-- Lista de productos seleccionados -->
             <DataGrid x:Name="dgProductosSeleccionados" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,0,0,10">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Nombre" Binding="{Binding Izena}" Width="*"/>
-                    <DataGridTextColumn Header="Precio (€)" Binding="{Binding Prezioa}" Width="80"/>
-                    <DataGridTextColumn Header="Cantidad" Binding="{Binding Cantidad}" Width="80"/>
-                    <DataGridTextColumn Header="Subtotal" Binding="{Binding Subtotal}" Width="100"/>
+                    <DataGridTextColumn Header="Izena" Binding="{Binding Izena}" Width="*"/>
+                    <DataGridTextColumn Header="Prezioa (€)" Binding="{Binding Prezioa}" Width="80"/>
+                    <DataGridTextColumn Header="Kantitatea" Binding="{Binding Kantitatea}" Width="80"/>
+                    <DataGridTextColumn Header="Guztira" Binding="{Binding Guztira}" Width="100"/>
                 </DataGrid.Columns>
             </DataGrid>
 
             <!-- Botones acción -->
             <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Right">
-                <Button Content="Borrar Seleccionado" Width="150" Margin="5"/>
-                <Button Content="Imprimir / Pagar" Width="150" Margin="5"/>
+                <Button Content="Borrar Seleccionado" Width="150" Margin="5" Click="AutatuaEzabatu"/>
+                <Button Content="Imprimir / Pagar" Width="150" Margin="5" Click="ImprimatuTicketa"/>
             </StackPanel>
         </Grid>
 
-        <!-- DERECHA -->
         <Grid Grid.Column="1" Margin="10">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <!-- Botones por tipo de producto -->
                 <RowDefinition Height="*"/>
-                <!-- Productos filtrados -->
             </Grid.RowDefinitions>
 
-            <!-- Tipos de producto -->
             <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
-                <Button Content="Bebidas" Width="100" Margin="5"/>
-                <Button Content="Comida" Width="100" Margin="5"/>
-                <Button Content="Postres" Width="100" Margin="5"/>
+                <Button Content="Edariak" Width="100" Margin="5"/>
+                <Button Content="Jatekoak" Width="100" Margin="5"/>
+                <Button Content="Postreak" Width="100" Margin="5"/>
             </StackPanel>
 
-            <!-- Productos filtrados por tipo -->
-            <WrapPanel Grid.Row="1" x:Name="wpProductos" HorizontalAlignment="Left" VerticalAlignment="Top" ItemWidth="120" ItemHeight="100">
-                <!-- Cada producto será un Button que al pulsar añade a la lista de la izquierda -->
-                <Button Content="Coca-Cola" Width="120" Height="100" Margin="5"/>
-                <Button Content="Estrella Galicia" Width="120" Height="100" Margin="5"/>
-                <Button Content="Kas Naranja" Width="120" Height="100" Margin="5"/>
-                <!-- Se pueden cargar dinámicamente desde código según el tipo -->
-            </WrapPanel>
+            <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto">
+                <UniformGrid x:Name="wpProduktuak" 
+                 Columns="3" 
+                 Rows="0"
+                 Margin="5"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Top"/>
+            </ScrollViewer>
         </Grid>
     </Grid>
 </Window>
