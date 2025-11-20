@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Interfaze garapena\\Interfaze-garapena\\Nueva carpeta\\TPV-Erronka\\Erronka1\\Erronka1\\Erronka1.csproj": {}
+    "D:\\Interfaze garapena\\Interfaze-garapena\\ErronkaTpv\\Erronka-TPV\\TPV-Erronka\\TPV-Erronka\\Erronka1\\Erronka1\\Erronka1.csproj": {}
   },
   "projects": {
-    "D:\\Interfaze garapena\\Interfaze-garapena\\Nueva carpeta\\TPV-Erronka\\Erronka1\\Erronka1\\Erronka1.csproj": {
+    "D:\\Interfaze garapena\\Interfaze-garapena\\ErronkaTpv\\Erronka-TPV\\TPV-Erronka\\TPV-Erronka\\Erronka1\\Erronka1\\Erronka1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Interfaze garapena\\Interfaze-garapena\\Nueva carpeta\\TPV-Erronka\\Erronka1\\Erronka1\\Erronka1.csproj",
+        "projectUniqueName": "D:\\Interfaze garapena\\Interfaze-garapena\\ErronkaTpv\\Erronka-TPV\\TPV-Erronka\\TPV-Erronka\\Erronka1\\Erronka1\\Erronka1.csproj",
         "projectName": "Erronka1",
-        "projectPath": "D:\\Interfaze garapena\\Interfaze-garapena\\Nueva carpeta\\TPV-Erronka\\Erronka1\\Erronka1\\Erronka1.csproj",
+        "projectPath": "D:\\Interfaze garapena\\Interfaze-garapena\\ErronkaTpv\\Erronka-TPV\\TPV-Erronka\\TPV-Erronka\\Erronka1\\Erronka1\\Erronka1.csproj",
         "packagesPath": "C:\\Users\\ik012982i18\\.nuget\\packages\\",
-        "outputPath": "D:\\Interfaze garapena\\Interfaze-garapena\\Nueva carpeta\\TPV-Erronka\\Erronka1\\Erronka1\\obj\\",
+        "outputPath": "D:\\Interfaze garapena\\Interfaze-garapena\\ErronkaTpv\\Erronka-TPV\\TPV-Erronka\\TPV-Erronka\\Erronka1\\Erronka1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
