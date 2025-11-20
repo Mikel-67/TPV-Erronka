@@ -169,8 +169,11 @@ namespace Erronka1.Bistak
         }
         private void erreserbaPantaila(object sender, RoutedEventArgs e)
         {
-            ErreserbaWindow erreserbaWindow = new ErreserbaWindow();
-            this.Close();
+            var erreserbaWindow = new ErreserbaWindow
+            {
+                Owner = this
+            };
+            erreserbaWindow.ShowDialog();
         }
     }
 }

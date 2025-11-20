@@ -81,3 +81,7 @@ D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erro
 D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\bin\Debug\net8.0-windows\PdfSharp.dll
 D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\bin\Debug\net8.0-windows\System.Security.Cryptography.Pkcs.dll
 D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\ErreserbaWindow.baml
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\ErreserbaWindow.g.cs
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\Controls\MahaiaControl.baml
+D:\Interfaze garapena\Interfaze-garapena\Nueva carpeta\TPV-Erronka\Erronka1\Erronka1\obj\Debug\net8.0-windows\Bistak\Controls\MahaiaControl.g.cs

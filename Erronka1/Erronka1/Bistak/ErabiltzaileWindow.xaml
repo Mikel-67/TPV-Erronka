@@ -21,7 +21,7 @@
 
             <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
                 <Button Content="TPV" Width="100" Margin="5"/>
-                <Button Content="Erreserba" Width="100" Margin="5"/>
+                <Button Content="Erreserba" Width="100" Margin="5" Click="erreserbaPantaila"/>
             </StackPanel>
 
             <DataGrid x:Name="dgProductosSeleccionados" Grid.Row="1" AutoGenerateColumns="False" CanUserAddRows="False" Margin="0,0,0,10">

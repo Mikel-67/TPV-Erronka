@@ -1,0 +1,8 @@
+﻿<UserControl x:Class="Erronka1.Bistak.Controls.MahaiaControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             Height="80" Width="80">
+    <Border x:Name="border" BorderBrush="Gray" BorderThickness="2" CornerRadius="6" Background="LightGreen">
+        <TextBlock x:Name="txtZenbakia" Text="1" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    </Border>
+</UserControl>
